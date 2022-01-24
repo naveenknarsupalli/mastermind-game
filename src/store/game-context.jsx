@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import answer from "./answer";
 
 const GameContext = React.createContext({
@@ -60,6 +60,10 @@ export const GameContextProvider = (props) => {
   const [guessedRight, setGuessedRight] = useState(false);
   const [currentRound, setCurrentRound] = useState(0);
   const [gameState, setGameState] = useState(initialGameState);
+
+  useEffect(() => {
+    console.log("answer", answer);
+  }, []);
 
   const value = {
     answer,

@@ -14,7 +14,7 @@ const DisplayResult = () => {
     <div className="custom-modal-bg">
       <div className="custom-modal wid center">
         <p>{result}</p>
-        <button type="button" class="m-2 btn btn-primary" onClick={playAgain}>
+        <button type="button" className="m-2 btn btn-primary" onClick={playAgain}>
           Play Again
         </button>
       </div>

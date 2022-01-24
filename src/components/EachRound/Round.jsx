@@ -5,12 +5,11 @@ import GuessColors from "./GuessColors";
 import GameContext from "../../store/game-context";
 
 const Round = ({ round }) => {
-  const { gameState, currentRound, answer } = useContext(GameContext);
+  const { gameState, currentRound } = useContext(GameContext);
 
   const [colorsConfirmed, setColorsConfirmed] = useState(false);
 
   const colorsConfirmedHandler = () => {
-    console.log("ans", answer);
     setColorsConfirmed(true);
   };
 
