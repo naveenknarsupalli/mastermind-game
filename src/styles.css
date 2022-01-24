@@ -1,0 +1,146 @@
+.custom-modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.custom-modal {
+  background-color: white;
+  height: 30%;
+  text-align: center;
+}
+
+.center {
+  position: relative;
+  border: 3px solid black;
+}
+
+.center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.circle {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.pick-circle-bd {
+  border: 0.15rem solid rgba(0, 0, 0, 0.75);
+}
+
+.margin-s {
+  margin: 0.1rem;
+}
+
+.fill-circle {
+  margin: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.4);
+}
+
+.yellow {
+  background-color: #ffb400;
+}
+
+.pink {
+  background-color: #ff5a5f;
+}
+
+.green {
+  background-color: #8ce071;
+}
+
+.light-blue {
+  background-color: #00d1c1;
+}
+
+.dark-blue {
+  background-color: #007a87;
+}
+
+.violet {
+  background-color: #7b0051;
+}
+
+.show-border {
+  border: 1px dotted black;
+}
+
+.wid {
+  width: 40%;
+}
+
+.app {
+  background-color: #f4f4f4;
+  margin: 0 auto;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+.masked {
+  opacity: 0.5;
+}
+
+.hint-circle {
+  margin: 0.15rem;
+  height: 0.75rem;
+  width: 0.75rem;
+  line-height: 0.375rem;
+  border-radius: 50%;
+  border: 0.1rem solid black;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: bolder;
+}
+
+.black {
+  background: black;
+}
+
+.white {
+  background: white;
+}
+
+@media (min-width: 720px) and (max-width: 1080px) {
+  .wid {
+    width: 50%;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 720px) {
+  .wid {
+    width: 60%;
+  }
+}
+
+@media (max-width: 544px) {
+  .wid {
+    width: 100%;
+  }
+}
